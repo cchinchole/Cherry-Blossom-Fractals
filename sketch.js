@@ -18,17 +18,9 @@ function setup()
   createCanvas(1600, 500);
 
   //Create the trunks for the three trees.
-  var a = createVector(width/6, height-17);
-  var b = createVector((width/6)+random(0, 8), height-150);
-  var c = createVector(width/2, height-17);
-  var d = createVector((width/2)+random(0, 8), height-150);
-  var e = createVector(width/1.2, height-17);
-  var f = createVector((width/1.2)+random(0, 8), height-150);
-
-  //Make the trunks the first 3 indexes of are tree.
-  branches[0] = new Branch(a, b, ww);
-  branches[1] = new Branch(c, d, ww);
-  branches[2] = new Branch(e, f, ww);
+  branches[0] = new Branch(createVector(width/6, height-17), createVector((width/6)+random(0, 8), height-150), ww);
+  branches[1] = new Branch(createVector(width/2, height-17), createVector((width/2)+random(0, 8), height-150), ww);
+  branches[2] = new Branch(createVector(width/1.2, height-17), createVector((width/1.2)+random(0, 8), height-150), ww);
 
   //Rounds for how many times to recurse through the function and develope the tree.
   for(currentRound = 0; currentRound < rounds; currentRound++)
