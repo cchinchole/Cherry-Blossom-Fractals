@@ -27,6 +27,8 @@ function leaf(point)
     }
     //Make the outside white and fill with pink. Make its size based off random with atleast 2.5.
     stroke(255, 255, 255);
+    //Adds a little bit of animation to the leaves by changing the outer size slightly.
+    strokeWeight(random(0, 3));
     fill(255, 100, 255);
     ellipse(this.point.x, this.point.y, this.randomSize, this.randomSize);
   }
