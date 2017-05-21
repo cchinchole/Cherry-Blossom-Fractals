@@ -13,7 +13,7 @@ function Branch(a, b, w)
   {
 
 
-      //Checks if our point is less than are generated blown posistion.
+      //Checks if our point is less than our generated blown posistion.
       if(this.pointB.x <= this.oldX+this.flair && this.pulse == 0)
       {
       //Adds our constant from sketch.js to the x.
