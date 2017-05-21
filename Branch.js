@@ -13,13 +13,13 @@ function Branch(a, b, w)
   {
 
 
-      //Checks if our point is less than our generated blown posistion.
+      //Checks if our point is less than the generated blown posistion.
       if(this.pointB.x <= this.oldX+this.flair && this.pulse == 0)
       {
       //Adds our constant from sketch.js to the x.
         this.pointB.x+=constantRate;
       }
-      //Checks if our point is more than are generated blown posistion.
+      //Checks if our point is more than the generated blown posistion.
       else if(this.pointB.x >= this.oldX)
       {
       //Subtract our constant from sketch.js from the x.
@@ -83,7 +83,7 @@ function Branch(a, b, w)
   {
     var br = [];
     this.isGrown = true;
-    //We get the line from the ending to the beginning points.
+    //We get the line from the ending to the beginning points of the this branch.
     var directionOffset = p5.Vector.sub(this.pointB, this.pointA);
     //Multiply it to shrink the size a bit.
     directionOffset.mult(0.7);
