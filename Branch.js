@@ -3,7 +3,7 @@ function Branch(a, b, w)
   this.pointA = a;
   this.pointB = b;
   this.isGrown = false;
-  this.count = currentRound;  //Tells us the hiarchy of the tree we are at.
+  this.count = currentRound;  //Tells us the hierarchy of the tree we are at.
   this.flair = random(3, 6); //Better name would by sway...
   this.oldX = this.pointB.x;
   this.pulse = 0;
@@ -22,7 +22,7 @@ function Branch(a, b, w)
       //Checks if our point is more than are generated blown posistion.
       else if(this.pointB.x >= this.oldX)
       {
-      //Subtract our constast from sketch.js from the x.
+      //Subtract our constant from sketch.js from the x.
         this.pulse = 1;
         this.pointB.x-=constantRate;
       //After we are all done then reset back to pulse 0 and restart the cycle.
@@ -30,7 +30,7 @@ function Branch(a, b, w)
           this.pulse = 0;
       }
 
-    //This code will do the blow the tree one direction then blow it to the other direction.
+    //This code will blow the tree one direction then blow it to the other direction.
     //It is not good for realistic wind.
 
     /*
